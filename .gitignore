@@ -6,6 +6,9 @@ target/
 ### IntelliJ IDEA ###
 /.idea/
 
+### logs ###
+/logs/
+
 ### VS Code ###
 .vscode/
 
