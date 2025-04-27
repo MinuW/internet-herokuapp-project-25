@@ -14,6 +14,7 @@ public class BrowserFactory {
         return driver.get();
     }
     public static void init(String browser) {
+
         WebDriver webDriver = null;
         ChromeOptions chromeOptions = new ChromeOptions();
         webDriver = switch (browser.toLowerCase()) {
