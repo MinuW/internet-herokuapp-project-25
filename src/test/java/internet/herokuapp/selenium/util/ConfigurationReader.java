@@ -12,7 +12,7 @@ public class ConfigurationReader {
             FileInputStream inputStream = new FileInputStream("src/test/resources/configuration.properties");
             properties.load(inputStream);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Critical file loading failure. Aborting tests.");
         }
     }
     public static String get(String key){
