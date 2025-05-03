@@ -3,6 +3,7 @@ package internet.herokuapp.selenium.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 public class AddRemoveElementsPage {
     private final WebDriver driver;
@@ -10,6 +11,7 @@ public class AddRemoveElementsPage {
 
     public AddRemoveElementsPage(WebDriver driver) {
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
     //Get Page Title
     public String getTitle() {
